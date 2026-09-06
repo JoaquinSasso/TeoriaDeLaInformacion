@@ -1,11 +1,5 @@
 # Práctico de Máquina 1: Análisis de Audio (WAV vs. MP3)
 
-**Materia:** Teoría de la Información  
-**Carrera:** Licenciatura en Ciencias de la Computación  
-**Año:** 2026  
-
----
-
 ## 1. ¿De qué trata este trabajo?
 
 El objetivo de esta actividad es comparar cómo se guardan los datos de audio en dos formatos diferentes:
