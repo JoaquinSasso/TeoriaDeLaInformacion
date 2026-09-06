@@ -21,6 +21,32 @@ from collections import Counter
 import matplotlib.pyplot as plt
 
 
+# Definición de pistas de audio para la comparativa progresiva
+PISTAS = [
+    {
+        "nombre": "Himno Nacional (Orquestal)",
+        "wav": "himno-nacional-argentino.wav",
+        "mp3": "himno-nacional-argentino.mp3",
+        "color_wav": "#1f77b4",
+        "color_mp3": "#ff7f0e",
+    },
+    {
+        "nombre": "Sillycat Shore (Chiptune 8-bit)",
+        "wav": "Sillycat_Shore.wav",
+        "mp3": "Sillycat_Shore.mp3",
+        "color_wav": "#2ca02c",
+        "color_mp3": "#d62728",
+    },
+    {
+        "nombre": "Voz Hablada (Locución con pausas)",
+        "wav": "persona.wav",
+        "mp3": "persona.mp3",
+        "color_wav": "#9467bd",
+        "color_mp3": "#8c564b",
+    },
+]
+
+
 def validar_archivos(ruta_wav, ruta_mp3):
     """
     Inciso a) Carga y Validación.
@@ -125,8 +151,17 @@ def analizar_cabecera_wav(ruta_wav):
         print(f"Tamaño de la metadata extra: {subchunk2_size} bytes")
         print("[!] Nota: Este archivo contiene metadatos intermedios desplazando el chunk 'data'.")
     print("--------------------\n")
-    
-    
+    return {
+        "chunk_id": chunk_id,
+        "chunk_size": chunk_size,
+        "format": formato,
+        "sample_rate": sample_rate,
+        "num_channels": num_channels,
+        "bits_per_sample": bits_per_sample,
+        "audio_format": audio_format,
+    }
+
+
 def calcular_probabilidades_y_entropia(ruta_archivo):
     """
     Incisos c) y e) Distribución de Probabilidades y Cálculo de Entropía.
@@ -170,40 +205,23 @@ def calcular_probabilidades_y_entropia(ruta_archivo):
     return frecuencias, entropia
 
 
-def graficar_histogramas(frec_wav, frec_mp3):
+def graficar_histogramas(frec_wav, frec_mp3, titulo_wav="WAV", titulo_mp3="MP3"):
     """
-    Inciso d) Histogramas de Frecuencia.
-    
-    Genera una figura comparativa con dos subgráficos (lado a lado):
-    - Subgráfico 1 (Azul): Distribución de frecuencias de bytes del archivo WAV.
-      Muestra típicamente una campana centrada alrededor de los niveles de silencio
-      o reposo (amplitud cero en audio PCM, ej. valores cercanos a 0 o 128), evidenciando
-      alta redundancia estadística.
-    - Subgráfico 2 (Naranja): Distribución de frecuencias de bytes del archivo MP3.
-      Muestra una distribución prácticamente uniforme sobre los 256 posibles valores
-      de byte, producto de la eliminación de redundancia y la compresión/entropía máxima
-      lograda por algoritmos como Huffman en el estándar MPEG.
-      
-    Parámetros:
-        frec_wav (Counter): Frecuencias de bytes del archivo WAV.
-        frec_mp3 (Counter): Frecuencias de bytes del archivo MP3.
+    Inciso d) Histogramas de Frecuencia para un par individual de archivos.
     """
-    # Ordenar los datos por valor de byte (0 a 255) para un eje X continuo
     x_wav, y_wav = zip(*sorted(frec_wav.items()))
     x_mp3, y_mp3 = zip(*sorted(frec_mp3.items()))
 
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5))
     
-    # Gráfico para WAV
     ax1.bar(x_wav, y_wav, color='blue', width=1.0)
-    ax1.set_title("Histograma WAV (Sin compresión - PCM)")
+    ax1.set_title(titulo_wav)
     ax1.set_xlabel("Valor del Byte (0 - 255)")
     ax1.set_ylabel("Frecuencia Absoluta")
     ax1.grid(axis='y', linestyle='--', alpha=0.7)
     
-    # Gráfico para MP3
     ax2.bar(x_mp3, y_mp3, color='orange', width=1.0)
-    ax2.set_title("Histograma MP3 (Comprimido con pérdida)")
+    ax2.set_title(titulo_mp3)
     ax2.set_xlabel("Valor del Byte (0 - 255)")
     ax2.set_ylabel("Frecuencia Absoluta")
     ax2.grid(axis='y', linestyle='--', alpha=0.7)
@@ -212,44 +230,126 @@ def graficar_histogramas(frec_wav, frec_mp3):
     plt.show()
 
 
+def graficar_triple_comparativa(resultados, ruta_salida="Histograma.png"):
+    """
+    Inciso d) Triple Comparativa Visual de Histogramas (3x2).
+    
+    Genera y guarda una figura comparativa con 3 filas (una por cada señal de audio)
+    y 2 columnas (WAV vs. MP3), permitiendo apreciar de manera contundente la
+    eliminación de redundancia y el salto de entropía según el tipo de señal acústica.
+    """
+    fig, axs = plt.subplots(3, 2, figsize=(15, 12))
+
+    for i, res in enumerate(resultados):
+        pista = res["pista"]
+        x_w, y_w = zip(*sorted(res["frec_wav"].items()))
+        x_m, y_m = zip(*sorted(res["frec_mp3"].items()))
+        h_w = res["entropia_wav"]
+        h_m = res["entropia_mp3"]
+        dh = res["delta_h"]
+
+        # Subgráfico WAV
+        axs[i, 0].bar(x_w, y_w, color=pista["color_wav"], width=1.0)
+        axs[i, 0].set_title(f"{i+1}. {pista['nombre']} - WAV (H = {h_w:.4f} bits/símbolo)", fontsize=11, fontweight='bold')
+        axs[i, 0].set_ylabel("Frecuencia Absoluta")
+        axs[i, 0].grid(axis='y', linestyle='--', alpha=0.5)
+
+        # Subgráfico MP3
+        axs[i, 1].bar(x_m, y_m, color=pista["color_mp3"], width=1.0)
+        axs[i, 1].set_title(f"{i+1}. {pista['nombre']} - MP3 (H = {h_m:.4f} bits/símbolo | ΔH = +{dh:.4f})", fontsize=11, fontweight='bold')
+        axs[i, 1].set_ylabel("Frecuencia Absoluta")
+        axs[i, 1].grid(axis='y', linestyle='--', alpha=0.5)
+
+        if i == 2:
+            axs[i, 0].set_xlabel("Valor del Byte (0 - 255)")
+            axs[i, 1].set_xlabel("Valor del Byte (0 - 255)")
+
+    plt.suptitle("Triple Comparativa de Entropía y Redundancia en Audio (WAV vs. MP3)", fontsize=14, fontweight='bold')
+    plt.tight_layout()
+    plt.savefig(ruta_salida, dpi=150)
+    print(f"[OK] Gráfico comparativo guardado exitosamente en '{ruta_salida}'.")
+    plt.show()
+
+
 def main():
     """
     Flujo principal de ejecución:
-    1. Define las rutas de los archivos de prueba (Himno Nacional Argentino en WAV y MP3).
-    2. Valida la existencia y formato de ambos archivos (Inciso a).
-    3. Analiza e imprime los campos de la cabecera canónica del archivo WAV (Inciso b).
-    4. Calcula frecuencias y entropía empírica de Shannon para WAV y MP3 (Incisos c y e).
-    5. Imprime los valores de entropía calculados para su posterior análisis comparativo (Inciso f).
-    6. Muestra los histogramas de frecuencia comparativos en pantalla (Inciso d).
+    1. Procesa y valida cada una de las 3 pistas de audio (Orquestal, Chiptune 8-bit, Voz).
+    2. Analiza las cabeceras canónicas RIFF/WAVE.
+    3. Calcula frecuencias y entropía empírica de Shannon.
+    4. Imprime por consola una tabla comparativa con métricas acústicas y teóricas.
+    5. Guarda y muestra el gráfico comparativo integral (Histograma.png).
     """
-    # Rutas relativas de los archivos con la misma pista de audio
-    ruta_wav = "himno-nacional-argentino.wav"
-    ruta_mp3 = "himno-nacional-argentino.mp3"
-    
-    try:
-        # a) Validación
-        validar_archivos(ruta_wav, ruta_mp3)
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    if script_dir:
+        os.chdir(script_dir)
+
+    print("=" * 95)
+    print(" TEORÍA DE LA INFORMACIÓN - PRÁCTICO DE MÁQUINA 1 (ACTIVIDAD 1)")
+    print(" TRIPLE COMPARATIVA: MÚSICA ORQUESTAL vs. CHIPTUNE 8-BIT vs. VOZ HABLADA")
+    print("=" * 95)
+
+    # a) Validación de todos los archivos
+    for pista in PISTAS:
+        validar_archivos(pista["wav"], pista["mp3"])
+    print("[OK] Todos los archivos de audio existen y tienen la extensión correcta.\n")
+
+    resultados = []
+
+    for pista in PISTAS:
+        print(f"\n>>> Procesando: {pista['nombre']}...")
         
-        # b) Análisis de cabecera
-        analizar_cabecera_wav(ruta_wav)
+        # b) Análisis de cabecera WAV
+        cabecera_info = analizar_cabecera_wav(pista["wav"])
         
         # c) y e) Probabilidades y Entropía empírica
-        print("Analizando archivo WAV...")
-        frec_wav, entropia_wav = calcular_probabilidades_y_entropia(ruta_wav)
+        print(f"Analizando '{pista['wav']}'...")
+        frec_w, h_w = calcular_probabilidades_y_entropia(pista["wav"])
+        size_w = os.path.getsize(pista["wav"])
         
-        print("Analizando archivo MP3...")
-        frec_mp3, entropia_mp3 = calcular_probabilidades_y_entropia(ruta_mp3)
+        print(f"Analizando '{pista['mp3']}'...")
+        frec_m, h_m = calcular_probabilidades_y_entropia(pista["mp3"])
+        size_m = os.path.getsize(pista["mp3"])
         
-        # Mostrar resultados numéricos de Entropía
-        print(f"\nEntropía Empírica WAV: {entropia_wav:.4f} bits/símbolo (Límite teórico máx: 8.0000)")
-        print(f"Entropía Empírica MP3: {entropia_mp3:.4f} bits/símbolo (Límite teórico máx: 8.0000)")
-        print(f"Diferencia de Entropía: {entropia_mp3 - entropia_wav:.4f} bits/símbolo")
-        
-        # d) Visualización gráfica de histogramas
-        graficar_histogramas(frec_wav, frec_mp3)
-        
-    except Exception as e:
-        print(f"Error durante la ejecución: {e}")
+        ratio = size_w / size_m
+        reduccion = (1 - size_m / size_w) * 100
+        delta_h = h_m - h_w
+
+        print(f"  -> H(WAV): {h_w:.4f} b/s | H(MP3): {h_m:.4f} b/s | Delta H: +{delta_h:.4f} b/s | Ratio: {ratio:.2f}:1 (-{reduccion:.1f}%)")
+
+        resultados.append({
+            "pista": pista,
+            "cabecera": cabecera_info,
+            "frec_wav": frec_w,
+            "entropia_wav": h_w,
+            "tamano_wav": size_w,
+            "frec_mp3": frec_m,
+            "entropia_mp3": h_m,
+            "tamano_mp3": size_m,
+            "ratio_compresion": ratio,
+            "reduccion_porc": reduccion,
+            "delta_h": delta_h
+        })
+
+    # Resumen comparativo en consola
+    print("\n" + "=" * 105)
+    print(f"{'CASO DE ESTUDIO':<35} | {'RES':<7} | {'WAV (MB)':<9} | {'MP3 (MB)':<9} | {'RATIO':<7} | {'H(WAV)':<8} | {'H(MP3)':<8} | {'Delta H':<7}")
+    print("-" * 105)
+    for res in resultados:
+        nombre = res["pista"]["nombre"]
+        bits = f"{res['cabecera']['bits_per_sample']} bits"
+        mb_w = f"{res['tamano_wav'] / (1024**2):.2f}"
+        mb_m = f"{res['tamano_mp3'] / (1024**2):.2f}"
+        rat = f"{res['ratio_compresion']:.2f}:1"
+        hw = f"{res['entropia_wav']:.4f}"
+        hm = f"{res['entropia_mp3']:.4f}"
+        dh = f"+{res['delta_h']:.4f}"
+        print(f"{nombre:<35} | {bits:<7} | {mb_w:<9} | {mb_m:<9} | {rat:<7} | {hw:<8} | {hm:<8} | {dh:<7}")
+    print("=" * 105)
+    print("Límite teórico máximo de entropía para 256 símbolos (8 bits): 8.0000 bits/símbolo.\n")
+
+    # d) Visualización gráfica comparativa
+    graficar_triple_comparativa(resultados, ruta_salida="Histograma.png")
 
 
 if __name__ == "__main__":

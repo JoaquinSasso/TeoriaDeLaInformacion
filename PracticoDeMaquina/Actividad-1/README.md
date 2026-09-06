@@ -3,17 +3,20 @@
 ## 1. ¿De qué trata este trabajo?
 
 El objetivo de esta actividad es comparar cómo se guardan los datos de audio en dos formatos diferentes:
-- **WAV:** Es audio en bruto, sin compresión (las muestras de sonido se guardan tal cual se graban).
-- **MP3:** Es audio comprimido (reduce el tamaño del archivo eliminando información repetitiva o imperceptible para el oído humano).
+- **WAV:** Es audio en bruto, sin compresión (las muestras de sonido se guardan tal cual se graban en modulación PCM).
+- **MP3:** Es audio comprimido con pérdida (reduce el tamaño del archivo eliminando información redundante o imperceptible para el oído mediante modelos psicoacústicos y codificación entrópica).
 
-Para hacer una comparación justa, usamos la misma pista de audio en ambos formatos: el *Himno Nacional Argentino* (`himno-nacional-argentino.wav` y `himno-nacional-argentino.mp3`).
+Para realizar un análisis riguroso y explorar cómo influye la naturaleza de la señal en la compresión, se implementó una **triple comparativa empírica** con tres tipos contrastantes de audio (cada uno presente en `.wav` y `.mp3`):
+1. **Himno Nacional Argentino** (`himno-nacional-argentino.wav` y `.mp3`): Grabación orquestal sinfónica completa y densa, codificada en **24 bits**.
+2. **Sillycat Shore** (`Sillycat_Shore.wav` y `.mp3`): Música retro estilo **chiptune / 8-bit** con ondas sintéticas geométricas y patrones periódicos, codificada en **16 bits**.
+3. **Voz Hablada** (`persona.wav` y `.mp3`): Locución de una persona hablando con pausas naturales y silencios entre palabras, codificada en **16 bits**.
 
 El programa en Python (`Actividad1.py`) hace lo siguiente:
-1. Comprueba que ambos archivos existan y tengan el formato correcto.
-2. Lee la cabecera del archivo WAV (los primeros 44 bytes) para ver detalles como la frecuencia de muestreo o si es estéreo.
-3. Cuenta qué tan seguido aparece cada byte (del 0 al 255) en cada archivo.
-4. Dibuja dos gráficos (histogramas) para ver visualmente cómo se distribuyen los datos.
-5. Calcula la **Entropía de Shannon** para medir el grado de incertidumbre y qué tan comprimida está la información.
+1. Valida la existencia y formato de los 3 pares de archivos.
+2. Lee e interpreta las cabeceras canónicas RIFF/WAVE (los primeros 44 bytes de cada WAV).
+3. Cuenta las ocurrencias de cada uno de los 256 valores de byte (0 al 255) y calcula su distribución de probabilidad empírica.
+4. Genera una cuadrícula comparativa de gráficos (histogramas 3x2) guardada en `Histograma.png`.
+5. Calcula la **Entropía empírica de Shannon** $H(X)$ y el salto de entropía $\Delta H = H(MP3) - H(WAV)$ para contrastar la eliminación de redundancia en cada caso.
 
 ---
 
@@ -53,75 +56,104 @@ pip install matplotlib
    python Actividad1.py
    ```
 3. **¿Qué vas a ver al ejecutarlo?**
-   - En la consola aparecerán los datos de la cabecera del archivo WAV (canales, frecuencia, etc.) y los valores de entropía de ambos archivos.
-   - Se abrirá una ventana con dos gráficos comparando las frecuencias de los bytes de ambos archivos. Cuando cierres esa ventana, el programa finaliza.
+   - En la consola se validan los 3 pares de archivos, se imprimen los campos de la cabecera canónica de cada WAV y se presenta una **tabla comparativa consolidada** con tamaños, ratios de compresión, entropías y saltos de incertidumbre ($\Delta H$).
+   - Se genera, guarda y muestra una figura con 6 gráficos en cuadrícula $3 \times 2$ (`Histograma.png`) comparando los histogramas de frecuencias de cada señal.
 
 ---
 
 ## 5. Explicación sencilla de cómo funciona el código
 
-El archivo `Actividad1.py` está dividido en funciones claras:
+El archivo `Actividad1.py` está estructurado de forma modular y documentada:
 
-* `validar_archivos`: Revisa que existan los archivos `.wav` y `.mp3` antes de empezar. Si falta alguno, avisa con un mensaje de error.
-* `analizar_cabecera_wav`: Abre el archivo WAV y lee los primeros 44 bytes. Ahí está guardada la información técnica del audio:
-  - Formato del archivo ("RIFF" / "WAVE").
-  - Frecuencia de muestreo (por ejemplo, 44.100 Hz).
-  - Canales (1 para Mono, 2 para Estéreo).
-  - Bits por muestra (por ejemplo, 16 o 24 bits).
-* `calcular_probabilidades_y_entropia`: Lee todo el archivo byte por byte. Cada byte tiene un valor entre 0 y 255. Cuenta cuántas veces se repite cada valor y calcula su porcentaje de aparición. Con esos datos, aplica la fórmula de Shannon:
-  $$H = -\sum p_i \cdot \log_2(p_i)$$
-  La entropía nos indica qué tan variada o impredecible es la información.
-* `graficar_histogramas`: Genera dos gráficos de barras con `matplotlib` (uno al lado del otro) para ver la diferencia visual entre el archivo sin comprimir y el comprimido.
-* `main`: Es la función principal que ejecuta los pasos en orden.
+* `validar_archivos`: Comprueba la existencia y extensión de cada par de archivos `.wav` y `.mp3`.
+* `analizar_cabecera_wav`: Lee y desempaqueta los primeros 44 bytes de la cabecera canónica RIFF/WAVE utilizando `struct`, extrayendo la resolución, canales, frecuencia de muestreo y tamaño del bloque de datos.
+* `calcular_probabilidades_y_entropia`: Modela el archivo como una fuente de información de memoria nula (DMS) sobre el alfabeto de 256 bytes ($0$ a $255$), calcula las frecuencias relativas ($p_i$) y aplica la ecuación de Shannon:
+  $$H(X) = -\sum_{i=0}^{255} p_i \cdot \log_2(p_i)$$
+* `graficar_triple_comparativa`: Genera una figura de 3 filas $\times$ 2 columnas con `matplotlib`, mostrando a la izquierda el audio sin compresión (WAV) y a la derecha el comprimido (MP3) para cada caso, guardándola en `Histograma.png`.
+* `main`: Coordina el procesamiento de las 3 señales, imprime el cuadro comparativo en consola y despliega la gráfica.
 
 ---
 
-## 6. Respuestas de la Actividad 1
+## 6. Respuestas de la Actividad 1 (Triple Comparativa)
 
-A continuación se detallan las respuestas a los puntos solicitados en la guía:
+A continuación se detallan las respuestas a las consignas solicitadas en la guía:
 
 ### a) Carga y Validación
-El programa verifica mediante la función `validar_archivos` que los archivos `himno-nacional-argentino.wav` e `himno-nacional-argentino.mp3` existan en la carpeta y tengan la extensión correcta. Ambos archivos pasaron la validación sin problemas.
+El script valida programáticamente la existencia y extensión de los tres pares de archivos utilizados en el estudio:
+1. `himno-nacional-argentino.wav` y `.mp3`
+2. `Sillycat_Shore.wav` y `.mp3`
+3. `persona.wav` y `.mp3`
 
-### b) Análisis de Cabecera del archivo WAV
-Al analizar los primeros 44 bytes de `himno-nacional-argentino.wav`, se obtuvieron los siguientes datos:
+Todos los archivos superaron exitosamente la validación.
 
-| Campo de la cabecera | Valor obtenido | Explicación |
-| :--- | :--- | :--- |
-| **ChunkID** | `RIFF` | Identifica que el archivo usa el formato contenedor RIFF. |
-| **Chunk Size** | `63.647.182 bytes` | Tamaño total del archivo menos 8 bytes (~60.7 MB). |
-| **Format** | `WAVE` | Indica que dentro del contenedor hay audio tipo WAVE. |
-| **Formato de audio** | `1 (PCM)` | Significa que el audio no tiene compresión. |
-| **Canales** | `2` | Es audio estéreo (dos canales: izquierdo y derecho). |
-| **Frecuencia de muestreo** | `44.100 Hz` | Se toman 44.100 muestras de sonido por segundo (calidad de CD). |
-| **Bits por muestra** | `24 bits` | Cada muestra usa 24 bits de resolución. |
-| **Subchunk2 ID** | `bext` | Contiene metadatos de emisión (*Broadcast Wave*) que van antes de los datos de sonido. |
+### b) Análisis de Cabeceras de los archivos WAV
+Al analizar los primeros 44 bytes de cada archivo WAV mediante la función `analizar_cabecera_wav`, se obtuvieron los siguientes metadatos canónicos:
+
+| Parámetro técnico | Himno Nacional | Sillycat Shore | Voz Hablada |
+| :--- | :---: | :---: | :---: |
+| **Identificador (ChunkID)** | `RIFF` | `RIFF` | `RIFF` |
+| **Tamaño de datos (ChunkSize)** | `63.647.182 bytes` (~60,7 MB) | `53.154.178 bytes` (~50,7 MB) | `14.918.936 bytes` (~14,2 MB) |
+| **Formato contenedor** | `WAVE` | `WAVE` | `WAVE` |
+| **Codificación (AudioFormat)** | `1` (PCM lineal sin compresión) | `1` (PCM lineal sin compresión) | `1` (PCM lineal sin compresión) |
+| **Canales (NumChannels)** | `2` (Estéreo) | `2` (Estéreo) | `2` (Estéreo) |
+| **Frecuencia de muestreo** | `44.100 Hz` | `44.100 Hz` | `48.000 Hz` |
+| **Resolución por muestra** | **`24 bits`** | **`16 bits`** | **`16 bits`** |
+| **Subchunk2 ID detectado** | `bext` (Metadata de broadcast) | `data` (Datos de sonido) | `data` (Datos de sonido) |
+
+---
 
 ### c) Distribución de Probabilidades
-El programa lee cada archivo como una secuencia de bytes. Como cada byte puede tomar 256 valores posibles (del 0 al 255), se calcula la probabilidad de cada uno dividiendo la cantidad de veces que aparece entre el total de bytes del archivo.
+Cada archivo fue procesado byte a byte considerando un alfabeto finito de 256 símbolos ($s_i \in \{0, 1, \dots, 255\}$). La probabilidad empírica de cada valor de byte se calculó como su frecuencia relativa sobre el total de bytes:
+$$p(s_i) = \frac{n_i}{N}$$
 
-### d) Histogramas
-* **WAV:** El gráfico muestra picos claros en ciertos valores. Esto se debe a que en el audio sin comprimir hay momentos de silencio o notas suaves donde los valores de las muestras se repiten con frecuencia.
-* **MP3:** El gráfico es mucho más plano y uniforme. Casi todos los valores del 0 al 255 aparecen una cantidad similar de veces.
+---
+
+### d) Histogramas Comparativos
+
+La siguiente figura reúne la triple comparativa en una cuadrícula $3 \times 2$:
 
 <div align="center">
 
-![Histograma WAV vs. MP3](./Histograma.png)
+![Triple Comparativa de Histogramas WAV vs. MP3](./Histograma.png)
 
 </div>
 
-### e) Cálculo de Entropía
-Aplicando la fórmula de Shannon a los datos de cada archivo, obtuvimos:
+* **Columna Izquierda (WAV - Sin compresión):**
+  * **1. Himno Nacional (Orquestal):** Muestra una base central ancha y elevada (~170.000 repeticiones por cada valor). Prácticamente todos los bytes del alfabeto se usan con frecuencia.
+  * **2. Sillycat Shore (Chiptune 8-bit):** El valle central es notablemente más profundo y plano (~90.000 repeticiones) y los picos en los polos `0` y `255` crecen marcadamente.
+  * **3. Voz Hablada (Locución):** Presenta un pico colosal en el valor `0` con casi **3,5 millones de ocurrencias** (cerca del 25% de todo el archivo), mientras que el rango medio (valores 30 a 230) permanece casi pegado al suelo.
+* **Columna Derecha (MP3 - Comprimido con pérdida):**
+  * En los tres casos, la compresión MP3 desmantela la redundancia estadística y distribuye la probabilidad de forma prácticamente uniforme sobre los 256 símbolos, aproximándose al estado de máxima entropía ($H \to 8,00$).
 
-* **Entropía del WAV:** $\approx 7,8029 \text{ bits/símbolo}$
-* **Entropía del MP3:** $\approx 7,9773 \text{ bits/símbolo}$
-* **Entropía máxima posible (para 256 valores):** $8,0000 \text{ bits/símbolo}$
+---
 
-### f) Comparación y Explicación
-¿Por qué hay tanta diferencia entre ambos archivos?
+### e) Cálculo de Entropía y Métricas de Rendimiento
 
-1. **En el archivo WAV (sin compresión):**  
-   El sonido se almacena de manera directa, tal como fue grabado. En cualquier canción existen notas que duran varios instantes, momentos de silencio o cambios de volumen suaves, por lo que muchas muestras seguidas tienen valores parecidos. Esto crea **redundancia** (información que se repite o que resulta fácil de predecir). Al haber más orden y redundancia, la entropía es menor ($7,80$).
+Aplicando la fórmula de Shannon a los tres escenarios, se obtuvieron las siguientes mediciones:
 
-2. **En el archivo MP3 (comprimido):**  
-   El formato MP3 analiza la música para quitar lo que el oído no puede percibir y aplica algoritmos de compresión (como la codificación Huffman) para eliminar datos repetitivos. Al comprimir, la redundancia desaparece y la información queda repartida de forma mucho más uniforme. Cuanto mejor comprimido está un archivo, más se parece a una secuencia aleatoria donde todos los valores son igualmente probables. Por esta razón, la entropía del MP3 sube y se acerca prácticamente al límite teórico máximo ($7,98$ de un máximo de $8$).
+| Caso de Estudio | Tipo de Señal | Bits/muestra | Tamaño WAV | Tamaño MP3 | Ratio de Compresión | Entropía WAV | Entropía MP3 | Salto $\Delta H$ |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **1. Himno Nacional** | Orquesta polifónica densa | 24 bits | 60,70 MB | 5,33 MB | **11,40 : 1** (-91,2%) | **$7,8029$** | $7,9773$ | **$+0,1744$** |
+| **2. Sillycat Shore** | Chiptune 8-bit retro | 16 bits | 50,69 MB | 6,45 MB | **7,86 : 1** (-87,3%) | **$7,4124$** | $7,9787$ | **$+0,5663$** |
+| **3. Voz Hablada** | Locución con pausas | 16 bits | 14,23 MB | 0,96 MB | **14,89 : 1** (-93,3%) | **$6,4968$** | $7,8019$ | **$+1,3050$** |
+
+> **Nota:** El límite teórico máximo de entropía para un alfabeto de 256 símbolos es $\log_2(256) = 8,0000 \text{ bits/símbolo}$.
+
+---
+
+### f) Comparación y Explicación Teórica
+
+¿Por qué se produce esta progresión tan marcada en la entropía y en el salto $\Delta H$?
+
+#### 1. ¿Por qué el Himno Nacional tiene una entropía inicial tan alta ($7,80$)?
+* **Riqueza espectral continua:** Una orquesta sinfónica posee decenas de instrumentos acústicos que suenan simultáneamente (cuerdas, vientos, bronces, coro y percusión) con reverberación continua de sala, ocupando todo el rango de amplitudes de forma constante.
+* **Resolución de 24 bits:** Cada muestra utiliza 3 bytes (LSB, byte medio y MSB). El byte menos significativo (LSB) y el intermedio registran microfluctuaciones y ruido de fondo casi aleatorio, actuando como un "piso de ruido" uniforme que eleva artificialmente la entropía marginal de orden 0. Por eso, su salto $\Delta H$ es de apenas $+0,17 \text{ bits}$.
+
+#### 2. ¿Por qué Sillycat Shore reduce su entropía a $7,41$ y triplica el salto $\Delta H$ (+0,57)?
+* **Síntesis geométrica simple:** La música chiptune / 8-bit se basa en osciladores que generan ondas cuadradas, triangulares y pulsos de ciclo fijo. Al no existir la complejidad acústica ni la reverberación analógica continua, hay mayor periodicidad y predictibilidad de amplitud.
+* **Resolución de 16 bits:** Al tener 2 bytes por muestra en lugar de 3, el byte más significativo (MSB, que contiene la envolvente del sonido y el signo) representa el **50% de los bytes leídos** (en vez del 33% en 24 bits), permitiendo que la redundancia del reposo y silencio se refleje con mayor nitidez.
+
+#### 3. ¿Por qué la Voz Hablada se desploma a $6,50$ y logra un salto récord de $+1,31$ bits y un ratio de $14,89:1$?
+* **Redundancia de Amplitud (Pausas y Silencios):** En una conversación o locución natural, existen constantes pausas entre palabras, frases y respiraciones. En modulación PCM, el silencio digital es una repetición continua de muestras idénticas en cero (`0x0000`). Como casi el **25% de todo el archivo son ceros**, la incertidumbre de la fuente se desploma drásticamente.
+* **Redundancia Espectral (Transformada MDCT de MP3):** El habla humana concentra casi toda su energía acústica en una banda muy estrecha (300 Hz a 3.400 Hz). El estándar MP3 divide el espectro en 32 subbandas de frecuencia; en voz humana, **la gran mayoría de las subbandas de agudos altos y graves profundos quedan completamente vacías (coeficientes en cero)**.
+* **Codificación Entrópica Óptima:** El compresor MP3 aprovecha estas secuencias masivas de ceros aplicando *Run-Length Encoding* (RLE) y árboles de Huffman, logrando una reducción de tamaño del **$93,3\%$** y distribuyendo la información resultante de forma cuasi-aleatoria en el archivo comprimido.
