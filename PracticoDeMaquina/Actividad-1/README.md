@@ -104,6 +104,12 @@ El programa lee cada archivo como una secuencia de bytes. Como cada byte puede t
 * **WAV:** El gráfico muestra picos claros en ciertos valores. Esto se debe a que en el audio sin comprimir hay momentos de silencio o notas suaves donde los valores de las muestras se repiten con frecuencia.
 * **MP3:** El gráfico es mucho más plano y uniforme. Casi todos los valores del 0 al 255 aparecen una cantidad similar de veces.
 
+<div align="center">
+
+![Histograma WAV vs. MP3](./Histograma.png)
+
+</div>
+
 ### e) Cálculo de Entropía
 Aplicando la fórmula de Shannon a los datos de cada archivo, obtuvimos:
 
