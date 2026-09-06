@@ -51,7 +51,7 @@ def validar_archivos(ruta_wav, ruta_mp3):
     """
     Inciso a) Carga y Validación.
     
-    Verifica programáticamente que:
+    Verifica que:
     1. Los archivos existan físicamente en las rutas indicadas.
     2. Las extensiones de los archivos correspondan estrictamente a '.wav' y '.mp3'.
     
