@@ -13,13 +13,15 @@ Para ver esto en la práctica y entender cómo influye el tipo de sonido, probam
 
 <div align="center">
 
-| Audio | Tipo de Señal | Escuchar Audio (MP3) | Audio sin compresión (WAV) |
+| Audio | Tipo de Señal | Reproducir Audio (MP3) | Audio sin compresión (WAV) |
 | :--- | :--- | :---: | :---: |
-| **Himno Nacional Argentino** | Orquesta polifónica (24 bits) | [▶️ Escuchar MP3](./himno-nacional-argentino.mp3)<br><audio controls src="./himno-nacional-argentino.mp3"></audio> | [📁 Archivo WAV (60,7 MB)](./himno-nacional-argentino.wav) |
-| **Sillycat Shore** | Chiptune 8-bit retro (16 bits) | [▶️ Escuchar MP3](./Sillycat_Shore.mp3)<br><audio controls src="./Sillycat_Shore.mp3"></audio> | [📁 Archivo WAV (50,7 MB)](./Sillycat_Shore.wav) |
-| **Voz Hablada** | Locución con pausas (16 bits) | [▶️ Escuchar MP3](./persona.mp3)<br><audio controls src="./persona.mp3"></audio> | [📁 Archivo WAV (14,2 MB)](./persona.wav) |
+| **Himno Nacional Argentino** | Orquesta polifónica (24 bits) | [▶️ Reproducir MP3](./himno-nacional-argentino.mp3?raw=true) | [📁 Archivo WAV (60,7 MB)](./himno-nacional-argentino.wav?raw=true) |
+| **Sillycat Shore** | Chiptune 8-bit retro (16 bits) | [▶️ Reproducir MP3](./Sillycat_Shore.mp3?raw=true) | [📁 Archivo WAV (50,7 MB)](./Sillycat_Shore.wav?raw=true) |
+| **Voz Hablada** | Locución con pausas (16 bits) | [▶️ Reproducir MP3](./persona.mp3?raw=true) | [📁 Archivo WAV (14,2 MB)](./persona.wav?raw=true) |
 
 </div>
+
+> 💡 **Nota para escuchar los audios en GitHub:** Al hacer clic en **`▶️ Reproducir MP3`**, GitHub transmitirá el archivo directo (`raw`) y tu navegador abrirá su reproductor de audio nativo para escucharlo al instante.
 
 El programa en Python (`Actividad1.py`) hace lo siguiente:
 1. Revisa que existan los 3 pares de archivos en la carpeta.
