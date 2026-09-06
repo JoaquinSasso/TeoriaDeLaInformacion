@@ -11,6 +11,15 @@ Para entender a fondo el concepto de **redundancia espacial** (cuando píxeles c
 2. **Fotografía (`foto.bmp` y `.jpg`):** Un paisaje con cielo en gradiente, sol, montañas, agua y pasto. Representa la **redundancia espacial natural** de una foto real.
 3. **Ruido Aleatorio (`ruido.bmp` y `.jpg`):** Cada píxel tiene un color completamente aleatorio e independiente de sus vecinos. Representa la **nula redundancia espacial**.
 
+<div align="center">
+
+| Caso 1: Color Sólido | Caso 2: Fotografía (Paisaje) | Caso 3: Ruido Aleatorio |
+| :---: | :---: | :---: |
+| <img src="./color_solido.jpg" width="220" alt="Color Sólido"> | <img src="./foto.jpg" width="220" alt="Fotografía"> | <img src="./ruido.jpg" width="220" alt="Ruido Aleatorio"> |
+| *Píxeles idénticos (azul puro)*<br>**Máxima redundancia espacial** | *Gradientes y áreas continuas*<br>**Redundancia espacial natural** | *Píxeles aleatorios independientes*<br>**Nula redundancia espacial** |
+
+</div>
+
 El programa en Python (`Actividad2.py`) hace lo siguiente:
 1. Revisa que existan los archivos en la carpeta.
 2. Lee los primeros 54 bytes de la cabecera de cada archivo BMP (firma, tamaño, dimensiones y bits por píxel).
