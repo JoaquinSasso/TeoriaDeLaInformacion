@@ -11,6 +11,16 @@ Para ver esto en la práctica y entender cómo influye el tipo de sonido, probam
 2. **Sillycat Shore** (`Sillycat_Shore.wav` y `.mp3`): Música estilo retro / 8-bit (chiptune), con sonidos sintetizados más simples y notas repetitivas (grabado en 16 bits).
 3. **Voz Hablada** (`persona.wav` y `.mp3`): Una persona hablando, con pausas naturales y silencios entre palabras (grabado en 16 bits).
 
+<div align="center">
+
+| Audio | Tipo de Señal | Escuchar Audio (MP3) | Audio sin compresión (WAV) |
+| :--- | :--- | :---: | :---: |
+| **Himno Nacional Argentino** | Orquesta polifónica (24 bits) | [▶️ Escuchar MP3](./himno-nacional-argentino.mp3)<br><audio controls src="./himno-nacional-argentino.mp3"></audio> | [📁 Archivo WAV (60,7 MB)](./himno-nacional-argentino.wav) |
+| **Sillycat Shore** | Chiptune 8-bit retro (16 bits) | [▶️ Escuchar MP3](./Sillycat_Shore.mp3)<br><audio controls src="./Sillycat_Shore.mp3"></audio> | [📁 Archivo WAV (50,7 MB)](./Sillycat_Shore.wav) |
+| **Voz Hablada** | Locución con pausas (16 bits) | [▶️ Escuchar MP3](./persona.mp3)<br><audio controls src="./persona.mp3"></audio> | [📁 Archivo WAV (14,2 MB)](./persona.wav) |
+
+</div>
+
 El programa en Python (`Actividad1.py`) hace lo siguiente:
 1. Revisa que existan los 3 pares de archivos en la carpeta.
 2. Lee la cabecera de cada archivo WAV (los primeros 44 bytes) para ver datos como la frecuencia de muestreo y si es estéreo.
