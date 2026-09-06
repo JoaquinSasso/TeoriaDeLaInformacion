@@ -114,7 +114,7 @@ La siguiente figura reúne la triple comparativa en una cuadrícula $3 \times 2$
 
 <div align="center">
 
-![Triple Comparativa de Histogramas WAV vs. MP3](./Histograma.png)
+![Triple Comparativa de Histogramas WAV vs. MP3](./HistogramaComparativo.png)
 
 </div>
 
