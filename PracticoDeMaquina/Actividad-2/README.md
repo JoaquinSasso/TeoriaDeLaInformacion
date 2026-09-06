@@ -149,10 +149,6 @@ Aplicando la fórmula de Shannon a cada archivo, obtuvimos los siguientes valore
 | **2. Fotografía** | Paisaje con gradientes y formas | 768,1 KB | 11,9 KB | **-98,4%** | **64,41 : 1** | **$6,9903$** | $7,3339$ | **$+0,3436$** |
 | **3. Ruido Aleatorio**| Píxeles aleatorios independientes | 768,1 KB | 194,1 KB | **-74,7%** | **3,96 : 1** | **$7,9998$** | $7,9311$ | **$-0,0686$** |
 
-> **Dato teórico interesante:** En el caso del color sólido en BMP, los datos de la imagen están formados casi exclusivamente por 3 bytes equiprobables (los componentes R, G y B). La fórmula de Shannon para 3 símbolos con probabilidad $1/3$ es:
-> $$H = -\log_2\left(\frac{1}{3}\right) = \log_2(3) \approx 1,58496 \text{ bits/símbolo}$$
-> El valor empírico calculado ($1,5860$) coincide casi a la perfección con este límite matemático exacto (la pequeñísima diferencia se debe a los 54 bytes de la cabecera).
-
 ---
 
 ### f) Comparación y Explicación
