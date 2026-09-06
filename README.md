@@ -27,7 +27,7 @@ carpeta correspondiente; se irán agregando los contenidos progresivamente.
 ## Práctico de Máquina
 
 ### Actividades
-- [Actividad 1](./Actividad%201/)
+- [Actividad 1](./PracticoDeMaquina/Actividad-1)
 - [Actividad 2](./Actividad%202/)
 - [Actividad 3](./Actividad%203/)
 - [Actividad 4](./Actividad%204/)
@@ -38,6 +38,4 @@ carpeta correspondiente; se irán agregando los contenidos progresivamente.
 - [Actividad 9](./Actividad%209/)
 
 > Actualizar los enlaces a medida que se agregan nuevas actividades.
-
-
 > Para añadir una nueva actividad, crea su carpeta y agrega aquí el enlace.
