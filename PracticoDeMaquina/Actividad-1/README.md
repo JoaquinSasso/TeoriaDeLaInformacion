@@ -15,13 +15,13 @@ Para ver esto en la práctica y entender cómo influye el tipo de sonido, probam
 
 | Audio | Tipo de Señal | Reproducir Audio (MP3) | Audio sin compresión (WAV) |
 | :--- | :--- | :---: | :---: |
-| **Himno Nacional Argentino** | Orquesta polifónica (24 bits) | [▶️ Reproducir MP3](https://raw.githubusercontent.com/JoaquinSasso/TeoriaDeLaInformacion/main/PracticoDeMaquina/Actividad-1/himno-nacional-argentino.mp3) | [📁 Descargar WAV (60,7 MB)](https://raw.githubusercontent.com/JoaquinSasso/TeoriaDeLaInformacion/main/PracticoDeMaquina/Actividad-1/himno-nacional-argentino.wav) |
-| **Sillycat Shore** | Chiptune 8-bit retro (16 bits) | [▶️ Reproducir MP3](https://raw.githubusercontent.com/JoaquinSasso/TeoriaDeLaInformacion/main/PracticoDeMaquina/Actividad-1/Sillycat_Shore.mp3) | [📁 Descargar WAV (50,7 MB)](https://raw.githubusercontent.com/JoaquinSasso/TeoriaDeLaInformacion/main/PracticoDeMaquina/Actividad-1/Sillycat_Shore.wav) |
-| **Voz Hablada** | Locución con pausas (16 bits) | [▶️ Reproducir MP3](https://raw.githubusercontent.com/JoaquinSasso/TeoriaDeLaInformacion/main/PracticoDeMaquina/Actividad-1/persona.mp3) | [📁 Descargar WAV (14,2 MB)](https://raw.githubusercontent.com/JoaquinSasso/TeoriaDeLaInformacion/main/PracticoDeMaquina/Actividad-1/persona.wav) |
+| **Himno Nacional Argentino** | Orquesta polifónica (24 bits) | [▶️ Reproducir MP3](https://cdn.jsdelivr.net/gh/JoaquinSasso/TeoriaDeLaInformacion@main/PracticoDeMaquina/Actividad-1/himno-nacional-argentino.mp3) | [📁 Descargar WAV (60,7 MB)](https://raw.githubusercontent.com/JoaquinSasso/TeoriaDeLaInformacion/main/PracticoDeMaquina/Actividad-1/himno-nacional-argentino.wav) |
+| **Sillycat Shore** | Chiptune 8-bit retro (16 bits) | [▶️ Reproducir MP3](https://cdn.jsdelivr.net/gh/JoaquinSasso/TeoriaDeLaInformacion@main/PracticoDeMaquina/Actividad-1/Sillycat_Shore.mp3) | [📁 Descargar WAV (50,7 MB)](https://raw.githubusercontent.com/JoaquinSasso/TeoriaDeLaInformacion/main/PracticoDeMaquina/Actividad-1/Sillycat_Shore.wav) |
+| **Voz Hablada** | Locución con pausas (16 bits) | [▶️ Reproducir MP3](https://cdn.jsdelivr.net/gh/JoaquinSasso/TeoriaDeLaInformacion@main/PracticoDeMaquina/Actividad-1/persona.mp3) | [📁 Descargar WAV (14,2 MB)](https://raw.githubusercontent.com/JoaquinSasso/TeoriaDeLaInformacion/main/PracticoDeMaquina/Actividad-1/persona.wav) |
 
 </div>
 
-> 💡 **Cómo escuchar los audios:** Al hacer clic en **`▶️ Reproducir MP3`**, el navegador abrirá directamente el reproductor de audio nativo con los controles de reproducción.
+> 💡 **Cómo escuchar los audios:** Al hacer clic en **`▶️ Reproducir MP3`**, el audio se reproducirá directamente en el navegador sin necesidad de descargarlo.
 
 El programa en Python (`Actividad1.py`) hace lo siguiente:
 1. Revisa que existan los 3 pares de archivos en la carpeta.
