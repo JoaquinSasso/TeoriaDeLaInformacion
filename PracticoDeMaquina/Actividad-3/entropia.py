@@ -60,10 +60,10 @@ def analizar_archivo(ruta):
         print(f"Redundancia:        {redundancia:.4f} bits/símbolo\n")
 
 if __name__ == "__main__":
-    # Ejecución del programa (Inciso b)
-    # Aquí puedes poner el nombre de los archivos generados o pasar tus propios archivos
-    archivo_txt = r"G:\Mi unidad\Facultad\4to año\Segundo Cuatrimestre\Teoría de la Información\TeoriaDeLaInformacion\PracticoDeMaquina\Actividad-3\texto_prueba.txt"
-    archivo_zip = r"G:\Mi unidad\Facultad\4to año\Segundo Cuatrimestre\Teoría de la Información\TeoriaDeLaInformacion\PracticoDeMaquina\Actividad-3\texto_prueba.zip"
+    # Obtener la ruta del directorio donde está el script
+    directorio_actual = os.path.dirname(os.path.abspath(__file__))
+    archivo_txt = os.path.join(directorio_actual, "texto_prueba.txt")
+    archivo_zip = os.path.join(directorio_actual, "texto_prueba.zip")
     
     analizar_archivo(archivo_txt)
     analizar_archivo(archivo_zip)
