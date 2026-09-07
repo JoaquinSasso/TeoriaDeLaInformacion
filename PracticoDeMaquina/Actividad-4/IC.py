@@ -46,9 +46,10 @@ def analizar_ic(ruta):
         print(f"Índice de Coincidencia:   {ic:.6f}\n")
 
 if __name__ == "__main__":
-    # Usando las mismas rutas con 'r' (raw string) que configuraste previamente
-    archivo_txt = r"G:\Mi unidad\Facultad\4to año\Segundo Cuatrimestre\Teoría de la Información\TeoriaDeLaInformacion\PracticoDeMaquina\Actividad-4\texto_prueba.txt"
-    archivo_zip = r"G:\Mi unidad\Facultad\4to año\Segundo Cuatrimestre\Teoría de la Información\TeoriaDeLaInformacion\PracticoDeMaquina\Actividad-4\texto_prueba.zip"
+    # Obtener la ruta del directorio donde está el script
+    directorio_actual = os.path.dirname(os.path.abspath(__file__))
+    archivo_txt = os.path.join(directorio_actual, "texto_prueba.txt")
+    archivo_zip = os.path.join(directorio_actual, "texto_prueba.zip")
     
     analizar_ic(archivo_txt)
     analizar_ic(archivo_zip)
