@@ -1,6 +1,4 @@
 
-
-```markdown
 # Cálculo de Entropía Empírica y Redundancia
 
 
@@ -57,7 +55,3 @@ Los resultados demuestran empíricamente cómo funcionan los algoritmos de compr
 * **El archivo de texto plano** posee una entropía baja (4.40 bits/símbolo) y una alta redundancia (casi 3.6 bits/símbolo desperdiciados). Esto se debe a la naturaleza de los lenguajes naturales: ciertas letras (como las vocales o el espacio en blanco) tienen una frecuencia de aparición muchísimo mayor que otras. Esta distribución de probabilidad tan desigual genera "huecos" que el algoritmo de compresión aprovecha.
 * **El archivo `.zip**`, por el contrario, reduce drásticamente el tamaño del archivo (de ~58KB a 1.2KB) al eliminar la redundancia estadística. El algoritmo agrupa los patrones repetitivos y los sustituye. Al hacer esto, los bytes resultantes en el archivo comprimido presentan una distribución de probabilidad mucho más uniforme.
 * **Conclusión:** A medida que se elimina la redundancia en los datos, la entropía empírica se acerca al límite teórico máximo (8 bits/símbolo). El valor de 6.7045 bits en el archivo comprimido indica que la incertidumbre por byte aumentó significativamente; es decir, cada byte en el `.zip` aporta mayor "información pura" estadísticamente impredecible en comparación con el texto original.
-
-```
-
-```
