@@ -39,7 +39,7 @@ Repositorio centralizado con los trabajos prácticos teóricos y actividades de 
 - [Actividad 9](./Actividad%209/)
 
 ### 📗 Práctico N°2: Canal de Información
-- [Actividad 1](./Actividad%201/)
+- [Actividad 1](./PracticoDeCanal/Ejercicio1-PracticoCanal.pdf)
 - [Actividad 2](./Actividad%202/)
 - [Actividad 3](./Actividad%203/)
 - [Actividad 4](./Actividad%204/)
