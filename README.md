@@ -47,7 +47,7 @@ Repositorio centralizado con los trabajos prácticos teóricos y actividades de 
 ### 💻 Práctico de Máquina
 - [Actividad 1: Análisis de Audio (WAV vs. MP3)](./PracticoDeMaquina/Actividad-1/)
 - [Actividad 2: Análisis de Imágenes (BMP vs. JPG)](./PracticoDeMaquina/Actividad-2/)
-- [Actividad 3](./PracticoDeMaquina/Actividad-3/)
+- [Actividad 3: Entropía Empírica en Archivos(Texto vs. Comprimidos)](./PracticoDeMaquina/Actividad-3/)
 - [Actividad 4](./PracticoDeMaquina/Actividad-4/)
 - [Actividad 5](./PracticoDeMaquina/Actividad-5/)
 - [Actividad 6](./PracticoDeMaquina/Actividad-6/)
