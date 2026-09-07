@@ -1,0 +1,650 @@
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
+La teoría de autómatas es fundamental en las ciencias de la computación. 
+Un autómata finito determinista (AFD) es un modelo matemático de computación que reconoce lenguajes regulares. 
+A diferencia de los modelos no deterministas, en un AFD, para cada estado y cada símbolo del alfabeto de entrada, 
+existe exactamente una transición a un siguiente estado. Esta propiedad los hace predecibles y altamente 
+eficientes para el análisis léxico y la búsqueda de patrones de cadenas.
+
+Por otro lado, a nivel de redes, la fragmentación de paquetes en la pila TCP/IP es un proceso vital 
+cuando los datagramas atraviesan redes con diferentes Unidades Máximas de Transferencia (MTU). 
+Si un paquete es demasiado grande para un enrutador (como un gateway intermedio que deba retransmitirlo), 
+el protocolo IP divide la carga útil en fragmentos más pequeños. Cada fragmento viaja de manera independiente 
+y contiene la información necesaria en su cabecera para ser reensamblado correctamente en el destino final. 
+El cálculo de subredes permite organizar estas infraestructuras lógicas, optimizando el enrutamiento y 
+limitando los dominios de difusión.
