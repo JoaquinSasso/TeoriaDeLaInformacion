@@ -211,9 +211,5 @@ def menu_pruebas():
         input("\nPresione ENTER para volver al menú...")
 
 
-def main():
-    menu_pruebas()
-
-
 if __name__ == "__main__":
-    main()
+    menu_pruebas()
