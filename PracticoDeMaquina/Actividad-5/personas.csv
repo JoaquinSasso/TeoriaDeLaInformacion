@@ -1,0 +1,21 @@
+apellido_nombre,direccion,dni,estudios_primarios,estudios_secundarios,estudios_universitarios,vivienda_propia,obra_social,trabaja,tiene_vehiculo,cuenta_bancaria
+"Gómez, Juan Carlos","Av. San Martín 1420, Rosario",34567890,True,True,False,True,True,True,True,True
+"Rodríguez, Lucía Elena","Calle Córdoba 850, Funes",41234567,True,True,True,False,True,True,False,True
+"Fernández, Martín","Bv. Oroño 230, Rosario",28901234,True,True,True,True,True,True,True,True
+"Pérez, María Soledad","Urquiza 3110, Santa Fe",38456123,True,True,False,False,False,True,False,False
+"López, Matías Agustín","Mitre 450, Rafaela",43567891,True,True,True,False,True,False,False,True
+"Díaz, Valentina","Pellegrini 1650, Rosario",39876543,True,True,False,True,True,True,True,True
+"Sosa, Carlos Alberto","Rivadavia 120, Villa Gobernador Gálvez",22345678,True,False,False,True,False,True,True,False
+"Álvarez, Camila Rocío","Salta 2450, Rosario",44123890,True,True,True,False,True,False,False,True
+"Torres, Jorge Daniel","San Lorenzo 780, San Lorenzo",31234987,True,True,False,True,True,True,True,True
+"Romero, Ana Paula","Laprida 1120, Rosario",36789456,True,True,True,False,True,True,False,True
+"Suárez, Franco Gastón","Mendoza 3940, Rosario",42567123,True,True,False,False,False,True,True,False
+"Benítez, Marta Susana","España 630, Granadero Baigorria",18234567,True,True,False,True,True,False,False,True
+"Castro, Lucas Ezequiel","Sarmiento 1820, Rosario",40345678,True,True,True,False,True,True,True,True
+"Acosta, Silvina Beatriz","Bv. 27 de Febrero 2150, Rosario",32678912,True,True,False,True,True,True,False,True
+"Ortiz, Gonzalo","Alvear 560, Venado Tuerto",37890123,True,True,True,True,True,True,True,True
+"Morales, Florencia Inés","Paraguay 940, Rosario",45123456,True,True,False,False,False,False,False,False
+"Giménez, Héctor Raúl","Av. Wheelwright 1780, Rosario",25456789,True,True,True,True,True,True,True,True
+"Vázquez, Julieta","Dorrego 1410, Rosario",41890234,True,True,True,False,True,True,False,True
+"Ramos, Diego Fernando","Ayacucho 5520, Rosario",33123789,True,False,False,False,False,True,True,False
+"Herrera, Micaela Sol","Bv. Rondeau 2980, Rosario",43789012,True,True,False,True,True,True,False,True
