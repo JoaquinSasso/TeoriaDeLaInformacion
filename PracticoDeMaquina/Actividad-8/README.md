@@ -2,62 +2,61 @@
 
 ## 1. ¿De qué trata este trabajo?
 
-El objetivo de este ejercicio es calcular numéricamente la **Capacidad de Canal ($C$)** de un canal discreto sin memoria (DMC) mediante un algoritmo de búsqueda exhaustiva (fuerza bruta).
+En este ejercicio calculamos de forma numérica la **Capacidad de Canal ($C$)** de un canal con entrada binaria y salida de 4 símbolos, usando un método de **búsqueda exhaustiva** (probando paso a paso todas las posibles distribuciones de entrada).
 
-El sistema modelado cuenta con:
-- **Entrada binaria:** $X \in \{0, 1\}$ ($2$ símbolos posibles).
-- **Salida cuaternaria:** $Y \in \{0, 1, 2, 3\}$ ($4$ símbolos posibles).
-- **Matriz de transición hacia adelante:** $P(Y|X)$ de tamaño $2 \times 4$, donde cada elemento $P(y_j|x_i)$ representa la probabilidad condicional de recibir el símbolo $y_j$ dado que se transmitió $x_i$.
+El canal funciona de la siguiente manera:
+- **Entrada binaria:** enviamos símbolos $X \in \{0, 1\}$ (2 opciones posibles).
+- **Salida cuaternaria:** recibimos símbolos $Y \in \{0, 1, 2, 3\}$ (4 opciones posibles).
+- **Matriz de transición $P(Y|X)$ ($2 \times 4$):** indica la probabilidad de recibir cada símbolo de salida según lo que se haya transmitido en la entrada.
 
-El programa permite resolver tanto canales **uniformes** (simétricos) como **no uniformes** (asimétricos).
+El programa permite analizar tanto canales **simétricos** (donde el ruido afecta por igual a ambas entradas) como **asimétricos** (donde una entrada sufre más ruido que la otra).
 
 ---
 
-## 2. Fundamento Matemático y Algoritmo
+## 2. ¿Cómo calcula el programa la capacidad?
 
-Para determinar la capacidad, el programa aplica las definiciones formales de la Teoría de la Información:
+El script evalúa cómo viaja la información siguiendo estos pasos:
 
-1. **Barrido Exhaustivo de la Fuente de Entrada:**
-   Se varía la probabilidad del símbolo de entrada $P(X=0)$ en incrementos de $0,01$ desde $0,00$ hasta $1,00$ ($101$ distribuciones evaluadas en total):
+1. **Barrido de la entrada:**  
+   Prueba valores para la probabilidad de enviar un cero ($P(X=0)$) desde $0,00$ hasta $1,00$ en pasos de $0,01$ (101 pruebas en total). Como solo hay dos símbolos, la probabilidad de enviar un uno es:
    $$P(X=1) = 1 - P(X=0)$$
 
-2. **Probabilidades de Salida (Teorema de la Probabilidad Total):**
-   Para cada distribución de entrada, se calculan las probabilidades de los 4 símbolos de salida:
-   $$P(y_j) = \sum_{i=0}^{1} P(x_i) \cdot P(y_j|x_i) = P(X=0) \cdot P(y_j|X=0) + P(X=1) \cdot P(y_j|X=1)$$
+2. **Probabilidades de salida ($P(Y)$):**  
+   Con la probabilidad de entrada y la matriz del canal, calcula qué tan probable es recibir cada una de las 4 salidas posibles.
 
-3. **Entropía de la Salida ($H(Y)$):**
-   Mide la incertidumbre promedio recibida en el destino:
+3. **Entropía de salida ($H(Y)$):**  
+   Mide la cantidad de incertidumbre o información total que llega al receptor:
    $$H(Y) = -\sum_{j=0}^{3} P(y_j) \log_2 P(y_j)$$
 
-4. **Entropía Condicional o Ruido del Canal ($H(Y|X)$):**
-   Mide la incertidumbre que subsiste en la salida conociendo la entrada transmitida:
-   $$H(Y|X) = \sum_{i=0}^{1} P(x_i) \cdot H(Y|X=x_i) = - \sum_{i=0}^{1} \sum_{j=0}^{3} P(x_i) P(y_j|x_i) \log_2 P(y_j|x_i)$$
+4. **Ruido del canal ($H(Y|X)$):**  
+   Mide cuánta información se pierde o confunde en el camino por culpa del canal:
+   $$H(Y|X) = \sum_{i=0}^{1} P(x_i) \cdot H(Y|X=x_i)$$
 
-5. **Información Mutua ($I(X;Y)$):**
-   Representa la cantidad neta de información que atraviesa el canal con éxito:
+5. **Información Mutua ($I(X;Y)$):**  
+   Es la información que realmente logra llegar limpia de la entrada a la salida:
    $$I(X;Y) = H(Y) - H(Y|X)$$
 
-6. **Capacidad de Canal ($C$):**
-   La capacidad es el valor máximo posible de información mutua sobre todas las posibles distribuciones de entrada:
+6. **Capacidad del Canal ($C$):**  
+   Es el valor más alto de información mutua que se encontró durante todo el barrido, junto con la distribución de entrada ($P(X=0)$ y $P(X=1)$) que permitió alcanzarlo:
    $$C = \max_{P(X)} I(X;Y)$$
 
 ---
 
 ## 3. ¿Cómo ejecutar el script?
 
-El programa está desarrollado en **Python 3** y no requiere librerías externas (solo utiliza el módulo estándar `math`).
+El programa está hecho en **Python 3** y no requiere instalar ninguna librería adicional.
 
-1. Abrir la terminal y situarse en la carpeta de la actividad:
+1. Abrí la terminal y parate en la carpeta del ejercicio:
    ```bash
    cd PracticoDeMaquina/Actividad-8
    ```
 
-2. Ejecutar el script:
+2. Ejecutá el script:
    ```bash
    python capacidad_canal_ejercicio_8.py
    ```
 
-3. El programa presenta un menú interactivo:
+3. El menú te permite ingresar matrices a mano o probar los casos ya incluidos:
    ```text
    ============================================================
    EJERCICIO 8 - CAPACIDAD DE CANAL
@@ -71,18 +70,18 @@ El programa está desarrollado en **Python 3** y no requiere librerías externas
    7. Salir
    ============================================================
    ```
-   * Si se elige la **opción 1**, se pueden ingresar los 8 valores de la matriz separando por espacios. El programa valida automáticamente que cada fila sume exactamente $1$ y que todas las probabilidades estén entre $0$ y $1$.
-   * Las **opciones 2 a 5** ejecutan los lotes de prueba predeterminados incorporados en el código.
-   * La **opción 6** corre todos los lotes de forma secuencial.
+   * Si elegís la **opción 1**, podés cargar los 8 valores de tu propia matriz. El script valida que cada fila sume exactamente $1$.
+   * Las **opciones 2 a 5** corren directamente los casos de prueba cargados.
+   * La **opción 6** corre todos los casos juntos.
 
 ---
 
-## 4. Resultados Obtenidos y Análisis Teórico
+## 4. Resultados y Análisis de los Casos de Prueba
 
-El código incluye cuatro casos de estudio representativos para validar el comportamiento del algoritmo frente a distintos niveles de simetría y ruido:
+El script incluye cuatro lotes de prueba para comprobar cómo se comporta el canal en distintas situaciones:
 
 ### Caso 1: Canal Uniforme Simétrico
-* **Matriz de transición $P(Y|X)$:**
+* **Matriz $P(Y|X)$:**
   ```text
   X=0 -> [0.7, 0.1, 0.1, 0.1]
   X=1 -> [0.1, 0.7, 0.1, 0.1]
@@ -90,15 +89,13 @@ El código incluye cuatro casos de estudio representativos para validar el compo
 * **Resultados:**
   * **Capacidad $C$:** $\approx 0,365148 \text{ bits/símbolo}$
   * **Distribución óptima:** $P(X=0) = 0,50 \quad | \quad P(X=1) = 0,50$
-* **Análisis Teórico:**
-  Las filas de la matriz son permutaciones entre sí (el canal es simétrico respecto a la dispersión de ruido). En este tipo de canales, la entropía condicional de cada fila es idéntica:
-  $$H(Y|X=0) = H(Y|X=1) = -(0,7 \log_2 0,7 + 3 \times 0,1 \log_2 0,1) \approx 1,3568 \text{ bits/símbolo}$$
-  Como el ruido $H(Y|X)$ es constante independientemente de $P(X)$, maximizar $I(X;Y) = H(Y) - H(Y|X)$ equivale puramente a maximizar la entropía de salida $H(Y)$. La distribución de entrada equiprobable ($P(X=0) = P(X=1) = 0,50$) genera la salida más uniforme posible, maximizando la información transmitida.
+* **¿Por qué da este resultado?**  
+  El ruido afecta exactamente de la misma manera al $0$ que al $1$ (las dos filas tienen los mismos números, solo cambia el orden). Como el ruido del canal es parejo para ambos símbolos, la forma de transmitir la mayor cantidad de información limpia es enviar mitad de ceros y mitad de unos ($50\%$ y $50\%$).
 
 ---
 
 ### Caso 2: Canal Determinista (Sin Ruido)
-* **Matriz de transición $P(Y|X)$:**
+* **Matriz $P(Y|X)$:**
   ```text
   X=0 -> [1.0, 0.0, 0.0, 0.0]
   X=1 -> [0.0, 1.0, 0.0, 0.0]
@@ -106,33 +103,27 @@ El código incluye cuatro casos de estudio representativos para validar el compo
 * **Resultados:**
   * **Capacidad $C$:** $1,000000 \text{ bit/símbolo}$
   * **Distribución óptima:** $P(X=0) = 0,50 \quad | \quad P(X=1) = 0,50$
-* **Análisis Teórico:**
-  Cada entrada produce una salida única e inequívoca ($Y=0$ para $X=0$, $Y=1$ para $X=1$). Por lo tanto, no existe ninguna pérdida por ruido:
-  $$H(Y|X) = 0 \text{ bits/símbolo} \implies I(X;Y) = H(X)$$
-  Dado que la entrada es binaria ($2$ estados), la máxima entropía de la fuente es $\log_2(2) = 1$ bit/símbolo, lo que se alcanza con equiprobabilidad ($P(X=0) = P(X=1) = 0,50$). Toda la información emitida por la fuente llega intacta al receptor.
+* **¿Por qué da este resultado?**  
+  No hay ninguna confusión: si mandamos un $0$ siempre sale un $0$, y si mandamos un $1$ siempre sale un $1$. El ruido es cero ($H(Y|X) = 0$). Como la entrada es binaria, lo máximo que se puede transmitir es $1$ bit por símbolo, y se aprovecha al $100\%$ cuando mandamos ambos símbolos con la misma frecuencia.
 
 ---
 
-### Caso 3: Canal Completamente Ruidoso (Inútil)
-* **Matriz de transición $P(Y|X)$:**
+### Caso 3: Canal Completamente Ruidoso
+* **Matriz $P(Y|X)$:**
   ```text
   X=0 -> [0.25, 0.25, 0.25, 0.25]
   X=1 -> [0.25, 0.25, 0.25, 0.25]
   ```
 * **Resultados:**
   * **Capacidad $C$:** $0,000000 \text{ bits/símbolo}$
-  * **Distribución óptima:** Indiferente (cualquier distribución da $0$)
-* **Análisis Teórico:**
-  Las filas de la matriz son idénticas: sin importar qué símbolo se envíe ($X=0$ o $X=1$), la salida siempre presenta una distribución uniforme entre los 4 estados ($P(Y=j) = 0,25$). La salida $Y$ es estadísticamente independiente de la entrada $X$.
-  En consecuencia:
-  $$H(Y) = \log_2(4) = 2 \text{ bits/símbolo}, \quad H(Y|X) = 2 \text{ bits/símbolo}$$
-  $$I(X;Y) = H(Y) - H(Y|X) = 2 - 2 = 0 \text{ bits/símbolo}$$
-  El canal es incapaz de transmitir información; el ruido destruye por completo cualquier señal enviada.
+  * **Distribución óptima:** Cualquiera (siempre da $0$)
+* **¿Por qué da este resultado?**  
+  La salida da siempre lo mismo sin importar qué hayamos mandado en la entrada. El receptor no tiene forma de adivinar qué se transmitió, por lo que la información útil transmitida es cero. El ruido destruye por completo el mensaje.
 
 ---
 
 ### Caso 4: Canal Asimétrico (Ruido Desigual)
-* **Matriz de transición $P(Y|X)$:**
+* **Matriz $P(Y|X)$:**
   ```text
   X=0 -> [0.7, 0.3, 0.0, 0.0]
   X=1 -> [0.2, 0.2, 0.3, 0.3]
@@ -140,15 +131,16 @@ El código incluye cuatro casos de estudio representativos para validar el compo
 * **Resultados:**
   * **Capacidad $C$:** $\approx 0,422713 \text{ bits/símbolo}$
   * **Distribución óptima:** $P(X=0) = 0,58 \quad | \quad P(X=1) = 0,42$
-* **Análisis Teórico:**
-  En este canal, la fuente se comporta de forma asimétrica:
-  - Cuando se envía $X=0$, la dispersión es menor ($H(Y|X=0) \approx 0,8813 \text{ bits}$), concentrándose únicamente en las salidas $Y=0$ y $Y=1$.
-  - Cuando se envía $X=1$, el ruido es notablemente mayor ($H(Y|X=1) \approx 1,9710 \text{ bits}$), dispersándose entre las cuatro salidas posibles e interfiriendo además con los símbolos de $X=0$.
+* **¿Por qué da este resultado?**  
+  Acá las dos entradas sufren ruido diferente:
+  - Cuando mandamos $0$, el resultado casi no se dispersa (solo puede salir $Y=0$ o $Y=1$).
+  - Cuando mandamos $1$, el resultado se mezcla entre las cuatro salidas posibles con más confusión.
   
-  Debido a esta asimetría, la distribución que maximiza la información mutua **no es equiprobable**. El canal premia transmitir el símbolo más limpio ($X=0$) con mayor frecuencia ($58\%$) que el símbolo ruidoso ($42\%$). Este resultado pone en evidencia la utilidad del algoritmo de búsqueda exhaustiva, ya que en canales no simétricos la distribución óptima no puede asumirse a priori como $50/50$.
+  Al ser más confiable el $0$ que el $1$, la mejor estrategia ya **no es $50/50$**: conviene mandar más veces el símbolo limpio ($58\%$ de ceros) y menos el símbolo ruidoso ($42\%$ de unos). Este caso muestra por qué sirve la búsqueda exhaustiva: en canales asimétricos, el óptimo no siempre es mitad y mitad.
 
 ---
 
 ## 5. Conclusiones
-* **Precisión de la búsqueda numérica:** El barrido en pasos de $\Delta p = 0,01$ evalúa exhaustivamente el espacio de probabilidades de una fuente binaria en cuestión de milisegundos, encontrando la capacidad y las probabilidades óptimas sin necesidad de cálculos diferenciales complejos.
-* **Impacto de la simetría:** En canales donde el ruido afecta a todos los símbolos de igual manera, la capacidad se alcanza siempre con una fuente balanceada ($50\%$ ceros y $50\%$ unos). En canales asimétricos, la búsqueda exhaustiva permite identificar qué símbolo conviene enviar con mayor frecuencia para evadir las transiciones más ruidosas.
+
+* **Fuerza bruta efectiva:** Al barrer con saltos de $0,01$, el programa evalúa 101 posibilidades en una fracción de segundo y encuentra la capacidad del canal de manera sencilla sin necesidad de resolver derivadas complicadas a mano.
+* **Simétrico vs. Asimétrico:** Cuando el canal es parejo para todos los símbolos, la capacidad siempre se logra con una entrada balanceada ($50\%$ y $50\%$). Pero si un símbolo sufre más ruido que otro, el sistema rinde mejor si se usa con más frecuencia el símbolo más confiable.
