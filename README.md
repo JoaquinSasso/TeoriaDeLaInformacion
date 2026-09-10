@@ -47,13 +47,13 @@ Repositorio centralizado con los trabajos prácticos teóricos y actividades de 
 ### 💻 Práctico de Máquina
 - [Actividad 1: Análisis de Audio (WAV vs. MP3)](./PracticoDeMaquina/Actividad-1/)
 - [Actividad 2: Análisis de Imágenes (BMP vs. JPG)](./PracticoDeMaquina/Actividad-2/)
-- [Actividad 3: Entropía Empírica en Archivos(Texto vs. Comprimidos)](./PracticoDeMaquina/Actividad-3/)
-- [Actividad 4: Indice de coincidencia (IC)](./PracticoDeMaquina/Actividad-4/)
+- [Actividad 3: Entropía Empírica en Archivos (Texto vs. Comprimidos)](./PracticoDeMaquina/Actividad-3/)
+- [Actividad 4: Índice de Coincidencia (IC)](./PracticoDeMaquina/Actividad-4/)
 - [Actividad 5](./PracticoDeMaquina/Actividad-5/)
 - [Actividad 6](./PracticoDeMaquina/Actividad-6/)
 - [Actividad 7](./PracticoDeMaquina/Actividad-7/)
-- [Actividad 8](./PracticoDeMaquina/Actividad-8/)
-- [Actividad 9](./PracticoDeMaquina/Actividad-9/)
+- [Actividad 8: Capacidad de Canal por Búsqueda Exhaustiva](./PracticoDeMaquina/Actividad-8/)
+- [Actividad 9: Simulación de Canal BSC con Sockets TCP](./PracticoDeMaquina/Actividad-9/)
 
 ---
 
