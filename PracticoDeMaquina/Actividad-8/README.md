@@ -63,21 +63,23 @@ El programa está desarrollado en **Python 3** y no requiere librerías externas
    EJERCICIO 8 - CAPACIDAD DE CANAL
    ============================================================
    1. Ingresar matriz manualmente
-   2. Ejecutar lote de prueba 1
-   3. Ejecutar lote de prueba 2
-   4. Ejecutar lote de prueba 3
-   5. Ejecutar todos los lotes de prueba
-   6. Salir
+   2. Lote 1: Canal uniforme simétrico (ruido idéntico por símbolo)
+   3. Lote 2: Canal determinista (sin ruido, C = 1 bit/símbolo)
+   4. Lote 3: Canal completamente ruidoso (salida independiente, C = 0)
+   5. Lote 4: Canal asimétrico (ruido desigual, óptimo P(X) != 0.5)
+   6. Ejecutar todos los lotes de prueba
+   7. Salir
    ============================================================
    ```
    * Si se elige la **opción 1**, se pueden ingresar los 8 valores de la matriz separando por espacios. El programa valida automáticamente que cada fila sume exactamente $1$ y que todas las probabilidades estén entre $0$ y $1$.
    * Las **opciones 2 a 5** ejecutan los lotes de prueba predeterminados incorporados en el código.
+   * La **opción 6** corre todos los lotes de forma secuencial.
 
 ---
 
 ## 4. Resultados Obtenidos y Análisis Teórico
 
-El código incluye tres casos de estudio representativos para validar el comportamiento del algoritmo frente a distintos niveles de simetría y ruido:
+El código incluye cuatro casos de estudio representativos para validar el comportamiento del algoritmo frente a distintos niveles de simetría y ruido:
 
 ### Caso 1: Canal Uniforme Simétrico
 * **Matriz de transición $P(Y|X)$:**
@@ -126,6 +128,24 @@ El código incluye tres casos de estudio representativos para validar el comport
   $$H(Y) = \log_2(4) = 2 \text{ bits/símbolo}, \quad H(Y|X) = 2 \text{ bits/símbolo}$$
   $$I(X;Y) = H(Y) - H(Y|X) = 2 - 2 = 0 \text{ bits/símbolo}$$
   El canal es incapaz de transmitir información; el ruido destruye por completo cualquier señal enviada.
+
+---
+
+### Caso 4: Canal Asimétrico (Ruido Desigual)
+* **Matriz de transición $P(Y|X)$:**
+  ```text
+  X=0 -> [0.7, 0.3, 0.0, 0.0]
+  X=1 -> [0.2, 0.2, 0.3, 0.3]
+  ```
+* **Resultados:**
+  * **Capacidad $C$:** $\approx 0,422713 \text{ bits/símbolo}$
+  * **Distribución óptima:** $P(X=0) = 0,58 \quad | \quad P(X=1) = 0,42$
+* **Análisis Teórico:**
+  En este canal, la fuente se comporta de forma asimétrica:
+  - Cuando se envía $X=0$, la dispersión es menor ($H(Y|X=0) \approx 0,8813 \text{ bits}$), concentrándose únicamente en las salidas $Y=0$ y $Y=1$.
+  - Cuando se envía $X=1$, el ruido es notablemente mayor ($H(Y|X=1) \approx 1,9710 \text{ bits}$), dispersándose entre las cuatro salidas posibles e interfiriendo además con los símbolos de $X=0$.
+  
+  Debido a esta asimetría, la distribución que maximiza la información mutua **no es equiprobable**. El canal premia transmitir el símbolo más limpio ($X=0$) con mayor frecuencia ($58\%$) que el símbolo ruidoso ($42\%$). Este resultado pone en evidencia la utilidad del algoritmo de búsqueda exhaustiva, ya que en canales no simétricos la distribución óptima no puede asumirse a priori como $50/50$.
 
 ---
 

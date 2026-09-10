@@ -169,6 +169,13 @@ def menu_pruebas():
                 [0.25, 0.25, 0.25, 0.25],
                 [0.25, 0.25, 0.25, 0.25]
             ]
+        ),
+        "5": (
+            "Caso 4 - Canal asimétrico",
+            [
+                [0.7, 0.3, 0.0, 0.0],
+                [0.2, 0.2, 0.3, 0.3]
+            ]
         )
     }
 
@@ -177,11 +184,12 @@ def menu_pruebas():
         print("EJERCICIO 8 - CAPACIDAD DE CANAL")
         print("=" * 60)
         print("1. Ingresar matriz manualmente")
-        print("2. Ejecutar lote de prueba 1")
-        print("3. Ejecutar lote de prueba 2")
-        print("4. Ejecutar lote de prueba 3")
-        print("5. Ejecutar todos los lotes de prueba")
-        print("6. Salir")
+        print("2. Lote 1: Canal uniforme simétrico (ruido idéntico por símbolo)")
+        print("3. Lote 2: Canal determinista (sin ruido, C = 1 bit/símbolo)")
+        print("4. Lote 3: Canal completamente ruidoso (salida independiente, C = 0)")
+        print("5. Lote 4: Canal asimétrico (ruido desigual, óptimo P(X) != 0.5)")
+        print("6. Ejecutar todos los lotes de prueba")
+        print("7. Salir")
         print("=" * 60)
 
         opcion = input("Seleccione una opción: ").strip()
@@ -197,11 +205,11 @@ def menu_pruebas():
             nombre, matriz = casos_prueba[opcion]
             mostrar_resultado(matriz, nombre)
 
-        elif opcion == "5":
+        elif opcion == "6":
             for nombre, matriz in casos_prueba.values():
                 mostrar_resultado(matriz, nombre)
 
-        elif opcion == "6":
+        elif opcion == "7":
             print("\nPrograma finalizado.")
             break
 
