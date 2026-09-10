@@ -93,27 +93,14 @@ C = 0.000000 bits/símbolo
 
 ## ¿Cómo ejecutarlo?
 
-Se necesita **Python 3.x** y no se requieren librerías externas.
+Se necesita **Python 3** y no se requieren librerías externas.
 
-### Windows
+### Ubicarse en la dirección del código y ejecutar en la terminal
 
 ```bash
 python capacidad_canal_ejercicio_8_menu.py
 ```
 
-### Linux / Ubuntu
-
-```bash
-python3 capacidad_canal_ejercicio_8_menu.py
-```
-
 Después simplemente se selecciona una opción del menú.
-
-## Archivos de la entrega
-
-```text
-capacidad_canal_ejercicio_8_menu.py
-README_ejercicio_8_menu.md
-```
 
 Los lotes de prueba están incluidos en `capacidad_canal_ejercicio_8_menu.py`.
