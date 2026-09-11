@@ -42,7 +42,7 @@ Repositorio centralizado con los trabajos prácticos teóricos y actividades de 
 - [Actividad 1: Canal de Clasificación y Probabilidades a Posteriori](./PracticoDeCanal/Ejercicio1-PracticoCanal.pdf)
 - [Actividad 2](./Actividad%202/)
 - [Actividad 3](./Actividad%203/)
-- [Actividad 4: Codificación Básica e Información Transmitida](./Actividad%204/Ejercicio4-PracticoCanal.pdf)
+- [Actividad 4: Codificación Básica e Información Transmitida](./PracticoDeCanal/Ejercicio4-PracticoCanal.pdf)
 
 ### 💻 Práctico de Máquina
 - [Actividad 1: Análisis de Audio (WAV vs. MP3)](./PracticoDeMaquina/Actividad-1/)
