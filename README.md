@@ -28,15 +28,7 @@ Repositorio centralizado con los trabajos prácticos teóricos y actividades de 
 ## 📑 Índice de Contenidos
 
 ### 📘 Práctico N°1: Teoría de la Información
-- [Actividad 1](./Actividad%201/)
-- [Actividad 2](./Actividad%202/)
-- [Actividad 3](./Actividad%203/)
-- [Actividad 4](./Actividad%204/)
-- [Actividad 5](./Actividad%205/)
-- [Actividad 6](./Actividad%206/)
-- [Actividad 7](./Actividad%207/)
-- [Actividad 8](./Actividad%208/)
-- [Actividad 9](./Actividad%209/)
+- [PDF con ejercicios resueltos](./Practico1-TeoriaDeLaInformacion/Practico1.pdf)
 
 ### 📗 Práctico N°2: Canal de Información
 - [Actividad 1: Canal de Clasificación y Probabilidades a Posteriori](./PracticoDeCanal/Ejercicio1-PracticoCanal.pdf)
@@ -50,8 +42,8 @@ Repositorio centralizado con los trabajos prácticos teóricos y actividades de 
 - [Actividad 3: Entropía Empírica en Archivos (Texto vs. Comprimidos)](./PracticoDeMaquina/Actividad-3/)
 - [Actividad 4: Índice de Coincidencia (IC)](./PracticoDeMaquina/Actividad-4/)
 - [Actividad 5: Almacenamiento y Empaquetado a Nivel de Bits (Bitwise)](./PracticoDeMaquina/Actividad-5/)
-- [Actividad 6](./PracticoDeMaquina/Actividad-6/)
-- [Actividad 7](./PracticoDeMaquina/Actividad-7/)
+- [Actividad 6: Medición de Distancia entre Cadenas](./PracticoDeMaquina/Actividad-6/)
+- [Actividad 7: Detección de Errores: Códigos de Control (Checksum)](./PracticoDeMaquina/Actividad-7/)
 - [Actividad 8: Capacidad de Canal por Búsqueda Exhaustiva](./PracticoDeMaquina/Actividad-8/)
 - [Actividad 9: Simulación de Canal BSC con Sockets TCP](./PracticoDeMaquina/Actividad-9/)
 
