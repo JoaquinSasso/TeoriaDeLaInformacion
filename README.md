@@ -33,7 +33,7 @@ Repositorio centralizado con los trabajos prácticos teóricos y actividades de 
 ### 📗 Práctico N°2: Canal de Información
 - [Actividad 1: Canal de Clasificación y Probabilidades a Posteriori](./PracticoDeCanal/Ejercicio1-PracticoCanal.pdf)
 - [Actividad 2: Canal Binario Asimétrico en Filtros Anti-Spam](./PracticoDeCanal/Ejercicio2-PracticoCanal.pdf)
-- [Actividad 3](./Actividad%203/)
+- [Actividad 3: Interfaz Determinista sin Ruido](./PracticoDeCanal/Ejercicio3-PracticoCanal.pdf)
 - [Actividad 4: Codificación Básica e Información Transmitida](./PracticoDeCanal/Ejercicio4-PracticoCanal.pdf)
 
 ### 💻 Práctico de Máquina
@@ -46,7 +46,3 @@ Repositorio centralizado con los trabajos prácticos teóricos y actividades de 
 - [Actividad 7: Detección de Errores: Códigos de Control (Checksum)](./PracticoDeMaquina/Actividad-7/)
 - [Actividad 8: Capacidad de Canal por Búsqueda Exhaustiva](./PracticoDeMaquina/Actividad-8/)
 - [Actividad 9: Simulación de Canal BSC con Sockets TCP](./PracticoDeMaquina/Actividad-9/)
-
----
-
-> ℹ️ *Los enlaces se irán actualizando a medida que se agreguen y completen las nuevas actividades.*
