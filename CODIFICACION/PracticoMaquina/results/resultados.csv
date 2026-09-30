@@ -1,0 +1,13 @@
+prueba,archivo,algoritmo,original_B,comprimido_B,ratio,ahorro_%,tam_relativo_%,bits_por_byte,t_comp_ms,t_desc_ms,v_comp_MBs,v_desc_MBs,cabecera_B,overhead_%,integridad,weissman
+Prueba 1,prueba_1_pequena.txt,PPM-C (propio),64,50,1.28,21.875,78.125,6.25,15.0205,15.56,0.0043,0.0041,14,28.0,OK,0.0143
+Prueba 2,prueba_2_texto_natural.txt,PPM-C (propio),102400,25484,4.0182,75.1133,24.8867,1.9909,396.1603,390.0693,0.2585,0.2625,14,0.0549,OK,0.0059
+Prueba 3,prueba_3_alta_repeticion.txt,PPM-C (propio),102400,5177,19.7798,94.9443,5.0557,0.4045,304.1886,298.46,0.3366,0.3431,14,0.2704,OK,0.0179
+Prueba 4,prueba_4_baja_repeticion.txt,PPM-C (propio),102400,98631,1.0382,3.6807,96.3193,7.7055,947.0168,1037.9006,0.1081,0.0987,14,0.0142,OK,0.183
+Prueba 1,prueba_1_pequena.txt,ZIP -6 (externa),64,179,0.3575,-179.6875,279.6875,22.375,1.4351,1.8905,0.0446,0.0339,138,77.095,OK,0.03
+Prueba 2,prueba_2_texto_natural.txt,ZIP -6 (externa),102400,2051,49.9269,97.9971,2.0029,0.1602,1.7511,2.4859,58.479,41.1925,150,7.3135,OK,0.7861
+Prueba 3,prueba_3_alta_repeticion.txt,ZIP -6 (externa),102400,1050,97.5238,98.9746,1.0254,0.082,1.8314,3.2157,55.9125,31.8437,154,14.6667,OK,0.8334
+Prueba 4,prueba_4_baja_repeticion.txt,ZIP -6 (externa),102400,85343,1.1999,16.6572,83.3428,6.6674,5.3545,3.3189,19.1242,30.854,154,0.1804,OK,0.864
+Prueba 1,prueba_1_pequena.txt,gzip -6 (baseline),64,59,1.0847,7.8125,92.1875,7.375,1.0334,1.5809,0.0619,0.0405,18,30.5085,OK,1.0
+Prueba 2,prueba_2_texto_natural.txt,gzip -6 (baseline),102400,1919,53.3611,98.126,1.874,0.1499,1.601,1.8867,63.9581,54.2736,18,0.938,OK,1.0
+Prueba 3,prueba_3_alta_repeticion.txt,gzip -6 (baseline),102400,914,112.035,99.1074,0.8926,0.0714,1.7849,1.8987,57.3714,53.9308,18,1.9694,OK,1.0
+Prueba 4,prueba_4_baja_repeticion.txt,gzip -6 (baseline),102400,85207,1.2018,16.79,83.21,6.6568,4.2719,2.5917,23.9707,39.511,18,0.0211,OK,1.0

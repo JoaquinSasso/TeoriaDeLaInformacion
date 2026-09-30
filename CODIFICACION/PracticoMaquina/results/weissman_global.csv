@@ -1,0 +1,4 @@
+algoritmo,R_global,T_global_ms,weissman_global
+PPM-C (propio),2.376,1661.064,0.1894
+ZIP -6 (externa),3.4734,8.8963,0.9393
+gzip -6 (baseline),3.4893,7.8643,1.0

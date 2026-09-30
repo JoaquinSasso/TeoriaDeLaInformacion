@@ -1,0 +1,32 @@
+# Resultados del benchmark (15 repeticiones, mediana)
+
+| Prueba | Algoritmo | Original (B) | Comprimido (B) | Ratio | Ahorro % | bits/byte | T comp (ms) | T desc (ms) | V comp (MB/s) | V desc (MB/s) | Overhead % | Weissman | SHA |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| Prueba 1 | PPM-C (propio) | 64 | 50 | 1.280 | 21.88 | 6.250 | 15.0 | 15.6 | 0.004 | 0.004 | 28.00 | 0.014 | OK |
+| Prueba 1 | ZIP -6 (externa) | 64 | 179 | 0.358 | -179.69 | 22.375 | 1.4 | 1.9 | 0.045 | 0.034 | 77.09 | 0.030 | OK |
+| Prueba 1 | gzip -6 (baseline) | 64 | 59 | 1.085 | 7.81 | 7.375 | 1.0 | 1.6 | 0.062 | 0.040 | 30.51 | 1.000 | OK |
+| Prueba 2 | PPM-C (propio) | 102400 | 25484 | 4.018 | 75.11 | 1.991 | 396.2 | 390.1 | 0.258 | 0.263 | 0.05 | 0.006 | OK |
+| Prueba 2 | ZIP -6 (externa) | 102400 | 2051 | 49.927 | 98.00 | 0.160 | 1.8 | 2.5 | 58.479 | 41.192 | 7.31 | 0.786 | OK |
+| Prueba 2 | gzip -6 (baseline) | 102400 | 1919 | 53.361 | 98.13 | 0.150 | 1.6 | 1.9 | 63.958 | 54.274 | 0.94 | 1.000 | OK |
+| Prueba 3 | PPM-C (propio) | 102400 | 5177 | 19.780 | 94.94 | 0.404 | 304.2 | 298.5 | 0.337 | 0.343 | 0.27 | 0.018 | OK |
+| Prueba 3 | ZIP -6 (externa) | 102400 | 1050 | 97.524 | 98.97 | 0.082 | 1.8 | 3.2 | 55.913 | 31.844 | 14.67 | 0.833 | OK |
+| Prueba 3 | gzip -6 (baseline) | 102400 | 914 | 112.035 | 99.11 | 0.071 | 1.8 | 1.9 | 57.371 | 53.931 | 1.97 | 1.000 | OK |
+| Prueba 4 | PPM-C (propio) | 102400 | 98631 | 1.038 | 3.68 | 7.706 | 947.0 | 1037.9 | 0.108 | 0.099 | 0.01 | 0.183 | OK |
+| Prueba 4 | ZIP -6 (externa) | 102400 | 85343 | 1.200 | 16.66 | 6.667 | 5.4 | 3.3 | 19.124 | 30.854 | 0.18 | 0.864 | OK |
+| Prueba 4 | gzip -6 (baseline) | 102400 | 85207 | 1.202 | 16.79 | 6.657 | 4.3 | 2.6 | 23.971 | 39.511 | 0.02 | 1.000 | OK |
+
+## Weissman global (Pruebas 2 a 4)
+
+| Algoritmo | R global | T global (ms) | Weissman |
+|---|---:|---:|---:|
+| PPM-C (propio) | 2.376 | 1661.1 | 0.189 |
+| ZIP -6 (externa) | 3.473 | 8.9 | 0.939 |
+| gzip -6 (baseline) | 3.489 | 7.9 | 1.000 |
+
+## Entorno
+
+- Sistema: Linux-6.18.44-fc-v50-x86_64-with-glibc2.39
+- Procesador: x86_64
+- Python: 3.12.3
+- zip: This is Zip 3.0 (July 5th 2008), by Info-ZIP.
+- gzip: gzip 1.12
