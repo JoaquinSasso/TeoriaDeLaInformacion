@@ -23,10 +23,3 @@
 | ZIP -6 (externa) | 3.473 | 8.9 | 0.939 |
 | gzip -6 (baseline) | 3.489 | 7.9 | 1.000 |
 
-## Entorno
-
-- Sistema: Linux-6.18.44-fc-v50-x86_64-with-glibc2.39
-- Procesador: x86_64
-- Python: 3.12.3
-- zip: This is Zip 3.0 (July 5th 2008), by Info-ZIP.
-- gzip: gzip 1.12
