@@ -45,3 +45,6 @@ Segundo módulo de la materia, centrado en métodos de compresión, fuentes con 
 - **💻 Práctico de Máquina 2 (Desafío de Compresores):** Compresor propio en Python usando **PPM-C** con codificación aritmética, comparado contra ZIP y `gzip -6` a través de pruebas de rendimiento.
 
 👉 *Acceso a los ejercicios resueltos y código: [README de CODIFICACION](./CODIFICACION/README.md)*
+
+
+### 3️⃣ [Documento Práctico 3: CRIPTOGRAFÍA](./CRIPTOGRAFIA/TpCripto.pdf)
