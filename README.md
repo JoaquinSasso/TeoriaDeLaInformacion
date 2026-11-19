@@ -46,5 +46,14 @@ Segundo módulo de la materia, centrado en métodos de compresión, fuentes con 
 
 👉 *Acceso a los ejercicios resueltos y código: [README de CODIFICACION](./CODIFICACION/README.md)*
 
+---
 
 ### 3️⃣ [Documento Práctico 3: CRIPTOGRAFÍA](./CRIPTOGRAFIA/TpCripto.pdf)
+Módulo dedicado a fundamentos y técnicas de criptografía:
+- **📄 Documento completo:** [TpCripto.pdf](./CRIPTOGRAFIA/TpCripto.pdf)
+
+---
+
+### 4️⃣ [Documento Práctico 4: CONTROL DE ERROR](./Control%20De%20Error/tp_Control_error_completo.pdf)
+Módulo dedicado a técnicas de detección y corrección de errores:
+- **📄 Documento completo:** [tp_Control_error_completo.pdf](./Control%20De%20Error/tp_Control_error_completo.pdf)
